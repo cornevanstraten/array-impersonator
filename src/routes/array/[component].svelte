@@ -22,3 +22,21 @@
 {#if componentName === 'credit-score-sight'}
 	<array-credit-score-sight appKey={$appKey} userToken={$userToken} />
 {/if}
+
+{#if componentName === 'credit-overview'}
+	<array-credit-overview appKey={$appKey} userToken={$userToken} defaultBureau="all" />
+{/if}
+
+{#if componentName === 'credit-alerts'}
+	<array-credit-alerts
+		appKey={$appKey}
+		userToken={$userToken}
+		maxPages="10"
+		alertsPerPage="10"
+		bureau="all"
+		defaultBureau="all"
+	/>
+{/if}
+{#if componentName === 'account-settings'}
+	<array-account-settings appKey={$appKey} userToken={$userToken} startPage="personalInformation" />
+{/if}

@@ -5,6 +5,9 @@
 	import creditReportImage from '../../static/credit-report.png';
 	import scoreSimulatorImage from '../../static/score-simulator.png';
 	import scoreSightImage from '../../static/score-sight.png';
+	import creditOverviewImage from '../../static/credit-overview.png';
+	import creditAlertsImage from '../../static/credit-alerts.png';
+	import accountSettingsImage from '../../static/account-settings.png';
 
 	$: {
 		console.log(`appKey: ${$appKey}`);
@@ -78,6 +81,24 @@
 				<img class="block h-auto w-full" src={scoreSightImage} alt="credit-score-sight" />
 			</a>
 			<h1 class="text-lg text-center p-2">Score Sight</h1>
+		</component>
+		<component class="overflow-hidden rounded-lg shadow-md hover:shadow-xl bg-gray-100">
+			<a href={`/array/credit-overview`}>
+				<img class="block h-auto w-full" src={creditOverviewImage} alt="credit-overview" />
+			</a>
+			<h1 class="text-lg text-center p-2">Credit Overview</h1>
+		</component>
+		<component class="overflow-hidden rounded-lg shadow-md hover:shadow-xl bg-gray-100">
+			<a href={`/array/credit-alerts`}>
+				<img class="block h-auto w-full" src={creditAlertsImage} alt="credit-alerts" />
+			</a>
+			<h1 class="text-lg text-center p-2">Credit Alerts</h1>
+		</component>
+		<component class="overflow-hidden rounded-lg shadow-md hover:shadow-xl bg-gray-100">
+			<a href={`/array/account-settings`}>
+				<img class="block h-auto w-full" src={accountSettingsImage} alt="account-settings" />
+			</a>
+			<h1 class="text-lg text-center p-2">Account settings</h1>
 		</component>
 	</div>
 </div>
