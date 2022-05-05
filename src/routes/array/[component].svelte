@@ -27,6 +27,19 @@
 	<array-credit-overview appKey={$appKey} userToken={$userToken} defaultBureau="all" />
 {/if}
 
+{#if componentName === 'credit-score-factors'}
+	<array-credit-score-factors appKey={$appKey} userToken={$userToken} hideBureauToggle={true} />
+{/if}
+
+{#if componentName === 'credit-debt-analysis'}
+	<array-credit-debt-analysis
+		appKey={$appKey}
+		userToken={$userToken}
+		showLoadingMessage={false}
+		hideBureauToggle={false}
+	/>
+{/if}
+
 {#if componentName === 'credit-alerts'}
 	<array-credit-alerts
 		appKey={$appKey}
