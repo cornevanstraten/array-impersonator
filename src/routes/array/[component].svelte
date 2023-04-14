@@ -15,6 +15,8 @@
 	<array-credit-report appKey={$appKey} userToken={$userToken} />
 {/if}
 
+<!-- ADD CREDIT_SCORE component -->
+
 {#if componentName === 'credit-score-simulator'}
 	<array-credit-score-simulator appKey={$appKey} userToken={$userToken} />
 {/if}
@@ -24,9 +26,10 @@
 {/if}
 
 {#if componentName === 'credit-overview'}
-	<array-credit-overview appKey={$appKey} userToken={$userToken} defaultBureau="all" />
+	<array-credit-overview appKey={$appKey} userToken={$userToken} />
 {/if}
 
+<!-- Score factors is deprecated -->
 {#if componentName === 'credit-score-factors'}
 	<array-credit-score-factors appKey={$appKey} userToken={$userToken} hideBureauToggle={true} />
 {/if}
@@ -47,7 +50,6 @@
 		maxPages="10"
 		alertsPerPage="10"
 		bureau="all"
-		defaultBureau="all"
 	/>
 {/if}
 {#if componentName === 'account-settings'}
