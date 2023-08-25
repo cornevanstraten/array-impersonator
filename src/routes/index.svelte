@@ -57,8 +57,8 @@
 			<br />
 			<a
 				class="text-xs text-blue-400"
-				href="https://portal.systemadmin.com/ccp_report_credmo_client_token.asp"
-				target="_blank">Extend userToken (SystemAdmin)</a
+				href="https://portal.array.com/ccp_report_credmo_client_token.asp"
+				target="_blank">Extend userToken</a
 			>
 		</div>
 	</div>

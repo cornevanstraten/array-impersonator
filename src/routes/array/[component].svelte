@@ -12,7 +12,7 @@
 </script>
 
 {#if componentName === 'credit-report'}
-	<array-credit-report appKey={$appKey} userToken={$userToken} />
+	<array-credit-report appKey={$appKey} userToken={$userToken} live={true} />
 {/if}
 
 <!-- ADD CREDIT_SCORE component -->
